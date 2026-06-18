@@ -4,8 +4,12 @@
 // Complejidad: BAJA (1 punto)
 
 function calcularPromedio($numeros){
-    //Escribe tu código aquí
-
+   $suma = 0;
+   foreach($numeros as $numero){
+    $suma += $numero;
+   }
+$promedio = $suma / count($numeros);
+return $promedio;
 }
 
 //Tests

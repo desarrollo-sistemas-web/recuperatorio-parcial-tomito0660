@@ -5,8 +5,19 @@
 // Complejidad: MEDIA (2 puntos)
 
 function calcularPromedioAprobados($calificaciones){
-    //Escribe tu código aquí
-
+   $sumaAprobados = 0;
+   $cantidadAprobados = 0;
+   foreach($calificaciones as $calificacion){
+    if($calificacion >= 6){
+    $sumaAprobados += $cantidadAprobados;
+    $cantidadAprobados++;
+    }
+   }
+if($calificacion == 0){
+    return "No hay calificacion aprobados";
+}
+$promedio= $sumaAprobados/$cantidadAprobados;
+return $promedio;
 }
 
 //Tests

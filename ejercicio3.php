@@ -4,7 +4,17 @@
 // Complejidad: MEDIA (2 puntos)
 
 function obtenerFactorial($numero){
-    //Escribe tu código aquí
+  if ($numero < 0) {
+    return "Error: El número debe ser mayor o igual a 0";
+  }
+  if ($numero == 0 || $numero == 1) {
+    return 1;
+  }
+  $resultado = 1;
+  for ($i = 2; $i <= $numero; $i++) {
+    $resultado *= $i;
+  }
+  return $resultado;
 }
 
 //Tests

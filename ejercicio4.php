@@ -4,8 +4,13 @@
 // Complejidad: MEDIA (2 puntos)
 
 function encontrarMaximo($numeros){
-    //Escribe tu código aquí
-
+$Maximo = $numeros[0];
+foreach($numeros as $numero){
+    if($numero > $Maximo){
+        $Maximo = $numero;
+    }
+}
+   return $Maximo;
 }
 
 //Tests

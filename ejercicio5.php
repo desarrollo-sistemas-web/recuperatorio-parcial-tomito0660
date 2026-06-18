@@ -5,7 +5,21 @@
 // Complejidad: BAJA (1 punto)
 
 function obtenerDiaSemana($numero){
-    //Escribe tu código aquí
+$dias = array (
+1 => "Lunes",
+2 => "Martes",
+3 => "Miercoles",
+4 => "Jueves",
+5 => "Viernes",
+6 => "Sabado",
+7 => "Domingo"
+);
+if(isset($dias[$numero])){
+return $dias[$numero];
+} else {
+    return "El numero debe estar entre 1 y 7";
+}
+    
 }
 
 //Tests

@@ -5,8 +5,17 @@
 // Complejidad: MEDIA (2 puntos)
 
 function ordenarArreglo($numeros){
-    //Escribe tu código aquí
-
+ $ordenado = $numeros;
+ for($i=0; $i < count($ordenado); $i++){
+    for($j= $i +1; $j < count($ordenado);$j++){
+       if($ordenado[$i]>$ordenado[$j]) {
+        $temp = $ordenado [$i];
+        $ordenado [$i] = $ordenado [$j];
+        $ordenado [$j] = $temp;
+       }
+    }
+ }
+return $ordenado;
 }
 
 //Tests

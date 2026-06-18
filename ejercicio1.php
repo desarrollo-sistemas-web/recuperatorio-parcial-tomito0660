@@ -4,7 +4,11 @@
 //Complejidad: BAJA (1 punto)
 
 function esPositivo($numero){
-    //Escribe tu código aquí
+  if ($numero > 0){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 //Tests with assert

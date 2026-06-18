@@ -5,7 +5,14 @@
 // Complejidad: BAJA (1 punto)
 
 function esDivisible($numero1, $numero2){
-    //Escribe tu código aquí
+   if ($numero2 == 0){
+    return "No se puede dividir entre 0";
+   }
+   if($numero1/$numero2 == 0){
+    return true;
+   } else {
+    return false;
+   }
 }
 
 //Tests
